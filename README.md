@@ -21,6 +21,8 @@ npm install minplate
 
 ```Minplate```对象对外暴露两个接口：```render(tpl, data, [wrapper])```和```renderArray(tpl, array, [wrapper])```。其中```renderArray```只是```render```在数据数组上的封装，给一个数组中的每个对象执行```render```等效于给此数组执行```renderArray```。
 
+---
+
 ##### 基本示例：
 
 ```js
