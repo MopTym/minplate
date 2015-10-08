@@ -8,6 +8,7 @@
   ],
   "description": "Mini templating engine in JavaScript",
   "keywords": [
+    "minplate",
     "template",
     "templating",
     "simple"

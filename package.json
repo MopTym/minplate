@@ -1,0 +1,25 @@
+{
+  "name": "minplate",
+  "version": "1.0.0",
+  "description": "Mini templating engine in JavaScript",
+  "main": "minplate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MopTym/minplate.git"
+  },
+  "keywords": [
+    "minplate",
+    "template",
+    "templating",
+    "simple"
+  ],
+  "author": "MopTym <moptym@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MopTym/minplate/issues"
+  },
+  "homepage": "https://github.com/MopTym/minplate"
+}
