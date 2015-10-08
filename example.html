@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Minplate Example</title>
+
+    <script id="user-item-template" type="text/template">
+        <li class="list-item" data-for="{{ id }}">{{ fullName }}</li>
+    </script>
+
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="minplate.js"></script>
+    <script>
+    $(function () {
+
+        var $userList = $('#user-list');
+        var userTpl = $('#user-item-template').html();
+        var users = [
+            { id: 0, firstName: 'Tom', lastName: 'Cruse' },
+            { id: 1, firstName: 'Nicolas', lastName: 'Cage' },
+            { id: 2, firstName: 'Aamir', lastName: 'Khan' }
+        ];
+
+        var wrapper = {
+            fullName: function () {
+                return this.firstName + ' ' + this.lastName;
+            }
+        };
+
+        $userList.html(Minplate.renderArray(userTpl, users, wrapper));
+
+    });
+    </script>
+</head>
+<body>
+    <ul id="user-list"></ul>
+</body>
+</html>
