@@ -88,3 +88,9 @@ var html = Minplate.render(tpl, user, wrapper);  // '<li id="1">Tom Cruse</li>'
 很多时候我们需要使用计算属性，但又不想因为添加计算属性而影响原有对象的结构，这时候我们可以使用wrapper对象。
 
 注意，wrapper对象的优先级高于原有对象。
+
+===
+
+### 许可
+
+[MIT License](https://github.com/MopTym/minplate/blob/master/LICENSE)
