@@ -23,7 +23,6 @@
   ],
   "moduleType": [
     "amd",
-    "globals",
-    "node"
+    "globals"
   ]
 }
