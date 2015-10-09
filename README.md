@@ -15,13 +15,13 @@ npm install minplate
 
 支持[AMD](https://github.com/amdjs/amdjs-api/wiki/AMD)及[CMD](http://www.commonjs.org/)等模块化规范，当不处于这些模块化环境中时，会暴露一个名为```Minplate```的对象。
 
----
+===
 
 ### 使用
 
 ```Minplate```对象对外暴露两个接口：```render(tpl, data, [wrapper])```和```renderArray(tpl, array, [wrapper])```。其中```renderArray```只是```render```在数据数组上的封装，给一个数组中的每个对象执行```render```等效于给此数组执行```renderArray```。
 
----
+===
 
 ##### 基本示例：
 
@@ -36,9 +36,18 @@ var html = Minplate.render(tpl, user);  // '<li id="1">Kakura</li>'
 
 Minplate会用```render```接口的第二个参数的指定属性值来替换模版内的mustache（{{}}）中的字符串。
 
+属性可以是深层的，下面都是可以正常替换的mustache：
+
+```js
+{{ a.b.c }}
+{{ a[b].c }}
+{{ a[b][c] }}
+{{ a."b-k".c }}
+```
+
 注意，渲染完成后用来替换的属性值都已经经过escapeHTML处理。
 
----
+===
 
 ##### 一般示例：
 
@@ -57,7 +66,7 @@ var html = Minplate.render(tpl, user);  // '<li id="1">Tom Cruse</li>'
 
 你可以使用计算属性，比如示例中的```fullName```。
 
----
+===
 
 ##### 进阶示例：
 
