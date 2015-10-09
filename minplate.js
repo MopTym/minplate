@@ -44,7 +44,9 @@
 
     function renderArray(tpl, array, wrapper) {
         var result = '', i;
-        for (i = 0; i < array.length; result += render(tpl, array[i++], wrapper));
+        for (i = 0; i < array.length; i++) {
+            result += render(tpl, array[i], wrapper);
+        }
         return result;
     }
 

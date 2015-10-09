@@ -36,13 +36,14 @@ var html = Minplate.render(tpl, user);  // '<li id="1">Kakura</li>'
 
 Minplate会用```render```接口的第二个参数的指定属性值来替换模版内的mustache（{{}}）中的字符串。
 
-属性可以是深层的，下面都是可以正常替换的mustache：
+属性可以是深层的，下面都是可以正常替换的等效的mustache：
 
 ```js
 {{ a.b.c }}
 {{ a[b].c }}
+{{ a[b]c }}
 {{ a[b][c] }}
-{{ a."b-k".c }}
+{{ a b c }}
 ```
 
 注意，渲染完成后用来替换的属性值都已经经过escapeHTML处理。
