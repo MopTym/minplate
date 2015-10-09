@@ -2,7 +2,7 @@
  * (c) MopTym
  * http://moptym.com/
  * 
- * Minplate.js built in 2015
+ * minplate.js built in 2015
  * Released under the MIT License.
  */
 (function (root, factory) {
@@ -44,9 +44,7 @@
 
     function renderArray(tpl, array, wrapper) {
         var result = '', i;
-        for (i = 0; i < array.length; i++) {
-            result += render(tpl, array[i], wrapper);
-        }
+        for (i = 0; i < array.length; result += render(tpl, array[i++], wrapper));
         return result;
     }
 
