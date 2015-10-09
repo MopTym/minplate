@@ -31,7 +31,7 @@
     function render(tpl, data, wrapper) {
         return tpl.replace(/\{\{.*?\}\}/g, function(name) {
             var val = data || '', wVal = wrapper || '', scope;
-            name.replace(/\{\{\s*|\s*\}\}/g, '').replace(/\w+/g, function(prop) {
+            name.replace(/\{\{\s*|\s*\}\}/g, '').replace(/\w+|-/g, function(prop) {
                 scope = val;
                 val = (val[prop] !== void 0? val[prop]: '');
                 wVal = (wVal[prop] !== void 0? wVal[prop]: '');
