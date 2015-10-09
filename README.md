@@ -7,10 +7,10 @@
 除了直接clone外，也可以通过[bower](http://bower.io/)或[npm](https://www.npmjs.com/)安装。
 
 ```
-bower install minplate
+bower install --save minplate
 ```
 ```
-npm install minplate
+npm install --save minplate
 ```
 
 支持[AMD](https://github.com/amdjs/amdjs-api/wiki/AMD)及[CMD](http://www.commonjs.org/)等模块化规范，当不处于这些模块化环境中时，会暴露一个名为```Minplate```的对象。
