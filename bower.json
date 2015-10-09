@@ -20,5 +20,10 @@
     "bower_components",
     "test",
     "tests"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
   ]
 }
