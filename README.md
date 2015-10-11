@@ -13,7 +13,7 @@ bower install --save minplate
 npm install --save minplate
 ```
 
-支持[AMD](https://github.com/amdjs/amdjs-api/wiki/AMD)及[CMD](http://www.commonjs.org/)等模块化规范，当不处于这些模块化环境中时，会暴露一个名为```Minplate```的对象。
+支持[AMD](https://github.com/amdjs/amdjs-api/wiki/AMD)及[CommonJS](http://www.commonjs.org/)等模块化规范，当不处于这些模块化环境中时，会暴露一个名为```Minplate```的对象。
 
 ===
 
