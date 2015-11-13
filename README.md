@@ -4,11 +4,8 @@
 
 ### 安装
 
-除了直接clone外，也可以通过[bower](http://bower.io/)或[npm](https://www.npmjs.com/)安装。
+除了直接clone外，也可以通过[npm](https://www.npmjs.com/)安装。
 
-```
-bower install --save minplate
-```
 ```
 npm install --save minplate
 ```
