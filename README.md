@@ -10,13 +10,13 @@
 npm install --save minplate
 ```
 
-支持[AMD](https://github.com/amdjs/amdjs-api/wiki/AMD)及[CMD](http://www.commonjs.org/)等模块化规范，当不处于这些模块化环境中时，会暴露一个名为```Minplate```的对象。
+支持[AMD](https://github.com/amdjs/amdjs-api/wiki/AMD)及[CommonJS](http://www.commonjs.org/)等模块化规范，当不处于这些模块化环境中时，会暴露一个名为```Minplate```的对象。
 
 ===
 
 ### 使用
 
-```Minplate```对象对外暴露两个接口：```render(tpl, data, [wrapper])```和```renderArray(tpl, array, [wrapper])```。其中```renderArray```只是```render```在数据数组上的封装，给一个数组中的每个对象执行```render```等效于给此数组执行```renderArray```。
+```Minplate```对象对外暴露两个接口：```render(tpl, data [, wrapper])```和```renderArray(tpl, array [, wrapper])```。其中```renderArray```只是```render```在数据数组上的封装，给一个数组中的每个对象执行```render```等效于给此数组执行```renderArray```。
 
 ===
 
